@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AetherTest – Test Your Infrastructure Before the Real World Does</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom sci-fi glow effects */
+    .glow-blue {
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.5),
+                  0 0 30px rgba(59, 130, 246, 0.3);
+    }
+    .glow-purple {
+      box-shadow: 0 0 15px rgba(168, 85, 247, 0.5),
+                  0 0 30px rgba(168, 85, 247, 0.3);
+    }
+    .bg-gradient-dark {
+      background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-gradient-dark text-white antialiased font-sans">
+  <!-- Hero Section -->
+  <section class="relative py-20 text-center overflow-hidden">
+    <div class="relative z-10">
+      <h1 class="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+        Test Your Infrastructure Before the Real World Does
+      </h1>
+      <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+        AetherTest simulates DevOps engineers, SREs, startup founders, and QA teams with lifelike AI agents—each with authentic goals, risk tolerance, and workflows—so you catch critical API issues in simulation, not in production.
+      </p>
+      <!-- Waitlist Form -->
+      <form action="https://formspree.io/f/moqywegd" method="POST" class="max-w-xl mx-auto space-y-4">
+        <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
+          <input type="email" name="email" 
+                 class="flex-1 px-5 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+                 placeholder="your@email.com" required>
+          <button type="submit"
+                  class="flex-1 px-5 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium rounded-lg transition-transform transform hover:scale-105 glow-blue">
+            Join Waitlist
+          </button>
+        </div>
+        <p class="text-xs text-gray-500">We'll notify you when early access opens. No spam, ever.</p>
+      </form>
+    </div>
+    <!-- Sci-fi decorative lines -->
+    <div class="absolute inset-0 -z-10 opacity-10">
+      <svg width="100%" height="100%" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill-opacity="0.1" d="M0,160 L480,180 C960,200 1440,140 1440,100 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+  </section>
+  <!-- Problem → Solution -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <h2 class="text-3xl font-semibold text-blue-300">The Problem</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Infrastructure APIs fail in production because traditional testing can't simulate real user behavior—authentication flows, error handling, rate limits, and complex workflows break under actual load.
+        </p>
+        <ul class="list-disc pl-5 space-y-2 text-gray-300">
+          <li>Authentication tokens expire mid-workflow</li>
+          <li>Rate limits trigger unexpected 429 responses</li>
+          <li>Complex multi-step sequences break silently</li>
+          <li>Different user personas behave unpredictably</li>
+          <li>Production incidents cost $1.5M+/hour</li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h2 class="text-3xl font-semibold text-purple-300">The Solution</h2>
+        <p class="text-gray-300 leading-relaxed">
+          AetherTest creates a living digital world where thousands of AI agents behave like real infrastructure users—testing your API with authentic DevOps, SRE, founder, and QA behaviors before you ship.
+        </p>
+        <div class="space-y-4">
+          <div class="flex items-start space-x-3">
+            <div class="w-3 h-3 bg-blue-400 rounded-full mt-1"></div>
+            <span>Realistic agent personas with distinct goals</span>
+          </div>
+          <div class="flex items-start space-x-3">
+            <div class="w-3 h-3 bg-purple-400 rounded-full mt-1"></div>
+            <span>Stateful workflows with auth persistence</span>
+          </div>
+          <div class="flex items-start space-x-3">
+            <div class="w-3 h-3 bg-blue-300 rounded-full mt-1"></div>
+            <span>Intelligent error handling & retry logic</span>
+          </div>
+          <div class="flex items-start space-x-3">
+            <div class="w-3 h-3 bg-purple-300 rounded-full mt-1"></div>
+            <span>Rate limit awareness & observability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Key Features -->
+  <section class="py-20 bg-gray-900/50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-blue-200">
+        How AetherTest Works
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Feature Card 1 -->
+        <div class="card-hover bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:bg-gray-800">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold">
+              1
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Define Your Test</h3>
+              <p class="text-gray-400 mt-1">Point to your API endpoint and map auth/resources/health checks</p>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            Specify your target infrastructure API and basic endpoint configuration—no complex setup required.
+          </p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="card-hover bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:bg-gray-800">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold">
+              2
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Choose Personas</h3>
+              <p class="text-gray-400 mt-1">Select which infrastructure user types to simulate</p>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            Pick from Cautious DevOps, Aggressive Founder, SRE, QA Engineer—each with authentic behaviors and goals.
+          </p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="card-hover bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:bg-gray-800">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-400 rounded-lg flex items-center justify-center text-white font-bold">
+              3
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Run Simulation</h3>
+              <p class="text-gray-400 mt-1">Launch thousands of AI agents against your API</p>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            Our orchestrator executes realistic workflows, handles errors intelligently, and collects comprehensive metrics.
+          </p>
+        </div>
+
+        <!-- Feature Card 4 -->
+        <div class="card-hover bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:bg-gray-800">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-r from-purple-400 to-blue-400 rounded-lg flex items-center justify-center text-white font-bold">
+              4
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Get Insights</h3>
+              <p class="text-gray-400 mt-1">Receive actionable reports on failure modes and performance</p>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            See exactly where your API struggles, which personas encounter issues, and what needs fixing before launch.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- How It Works Visual -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-blue-200">
+        The AetherTest Workflow
+      </h2>
+      <div class="flex flex-col items-center space-y-8 md:flex-row md:space-y-0 md:space-x-12">
+        <!-- Step 1 -->
+        <div class="text-center">
+          <div class="w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mb-4">
+            1
+          </div>
+          <h3 class="text-lg font-semibold text-white">Authenticate</h3>
+          <p class="text-gray-400 mt-2 max-w-sm">
+            Agents securely log in and maintain persistent tokens across interactions
+          </p>
+        </div>
+        <!-- Step 2 -->
+        <div class="text-center">
+          <div class="w-14 h-14 bg-gradient-to-r from-purple-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold mb-4">
+            2
+          </div>
+          <h3 class="text-lg font-semibold text-white">Execute Workflow</h3>
+          <p class="text-gray-400 mt-2 max-w-sm">
+            Multi-step API sequences mimic real infrastructure usage patterns
+          </p>
+        </div>
+        <!-- Step 3 -->
+        <div class="text-center">
+          <div class="w-14 h-14 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-white font-bold mb-4">
+            3
+          </div>
+          <h3 class="text-lg font-semibold text-white">Validate & Report</h3>
+          <p class="text-gray-400 mt-2 max-w-sm">
+            Intelligent error handling captures issues; observability dashboard delivers insights
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Placeholder -->
+  <section class="py-20 bg-gray-900/30">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-blue-200">
+        What Early Users Are Saying
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card-hover bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+          <p class="italic text-gray-300 mb-4">
+            "AetherTest caught our authentication race condition that would have caused a $2M outage in production."
+          </p>
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-xs font-medium text-blue-300">
+              JS
+            </div>
+            <div>
+              <div class="font-medium text-white">Jordan Smith</div>
+              <div class="text-xs text-gray-400">CTO, InfraScale Inc.</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-hover bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+          <p class="italic text-gray-300 mb-4">
+            "The realistic QA agent personas found edge cases our unit tests missed—saved us weeks of debugging."
+          </p>
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-xs font-medium text-purple-300">
+              AC
+            </div>
+            <div>
+              <div class="font-medium text-white">Alex Chen</div>
+              <div class="text-xs text-gray-400">Lead SRE, NovaCloud</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="py-12 border-t border-gray-800">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col items-center space-y-6 text-gray-400">
+      <div class="flex space-x-8">
+        <a href="#" class="hover:text-white transition-colors">How It Works</a>
+        <a href="#" class="hover:text-white transition-colors">Features</a>
+        <a href="#" class="hover:text-white transition-colors">Roadmap</a>
+        <a href="#" class="hover:text-white transition-colors">Pricing</a>
+      </div>
+      <div class="space-x-8">
+        <a href="#" class="hover:text-white transition-colors">Docs</a>
+        <a href="#" class="hover:text-white transition-colors">Blog</a>
+        <a href="#" class="hover:text-white transition-colors">Careers</a>
+        <a href="#" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <div class="text-xs">
+        &copy; 2026 AetherTest. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
