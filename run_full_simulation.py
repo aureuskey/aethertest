@@ -22,7 +22,7 @@ from aethertest.agents.synthetic_agent import AgentPersona
 class MockAPIManager:
     """Manages the mock API server lifecycle."""
 
-    def __init__(self, host: str = "127.0.0.1", port: int = 8003):
+    def __init__(self, host: str = "127.0.0.1", port: int = 8000):
         self.host = host
         self.port = port
         self.process = None
