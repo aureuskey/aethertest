@@ -9,6 +9,9 @@ from src.aethertest.core.models import Base
 # Create engine
 engine = create_engine(settings.DATABASE_URL)
 
+# Create tables
+Base.metadata.create_all(bind=engine)
+
 # Create session factory
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     POSTGRES_PASSWORD: str = os.getenv("POSTGRES_PASSWORD", "postgres")
     POSTGRES_DB: str = os.getenv("POSTGRES_DB", "infra_sim")
     POSTGRES_PORT: str = os.getenv("POSTGRES_PORT", "5432")
-    USE_SQLITE: bool = os.getenv("USE_SQLITE", "false").lower() == "true"
+    USE_SQLITE: bool = os.getenv("USE_SQLITE", "true").lower() == "true"
 
     @property
     def DATABASE_URL(self):
@@ -34,7 +34,8 @@ class Settings(BaseSettings):
 
     model_config = {
         "case_sensitive": True,
-        "env_file": ".env"
+        "env_file": ".env",
+        "extra": "ignore"
     }
 
 settings = Settings()
