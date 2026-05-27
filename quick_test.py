@@ -36,7 +36,7 @@ class MockAPIManager:
 
         # Start the server as a subprocess
         self.process = subprocess.Popen(
-            [sys.executable, "-m", "uvicorn", "mock_api:app",
+            [r"C:\Users\HP\AppData\Local\Programs\Python\Python313\python.exe", "-m", "uvicorn", "mock_api:app",
              "--host", self.host, "--port", str(self.port),
              "--log-level", "info"],
             stdout=subprocess.PIPE,

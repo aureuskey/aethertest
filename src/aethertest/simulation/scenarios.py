@@ -1,7 +1,7 @@
 """
 Pre-defined simulation scenarios for AetherTest.
 """
-from typing import Dict, Any
+from typing import Dict, Any, List
 
 # Scenario configurations
 SCENARIOS = {

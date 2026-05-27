@@ -18,8 +18,29 @@ def main():
     command = sys.argv[1]
     args = sys.argv[2:]
 
-    # Base command - use the same Python interpreter
-    base = [sys.executable]
+    # Convert user-friendly --url to --api-url for underlying scripts
+    processed_args = []
+    i = 0
+    while i < len(args):
+        if args[i] == "--url":
+            # Handle --url value format
+            processed_args.append("--api-url")
+            if i + 1 < len(args):
+                processed_args.append(args[i + 1])
+                i += 2
+            else:
+                print("Error: --url requires a value")
+                sys.exit(1)
+        elif args[i].startswith("--url="):
+            # Handle --url=value format
+            processed_args.append("--api-url" + args[i][5:])
+            i += 1
+        else:
+            processed_args.append(args[i])
+            i += 1
+
+    # Base command - use the Python interpreter that has langgraph installed
+    base = [r"C:\Users\HP\AppData\Local\Programs\Python\Python313\python.exe"]
 
     if command == "test":
         base.append("run_full_simulation.py")
@@ -41,7 +62,7 @@ def main():
         sys.exit(1)
 
     # Execute the selected script with all remaining arguments
-    subprocess.run(base + args)
+    subprocess.run(base + processed_args)
 
 if __name__ == "__main__":
     main()
